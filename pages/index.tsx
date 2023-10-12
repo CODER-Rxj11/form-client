@@ -5,7 +5,7 @@ export default function index() {
   const [message, setMessage] = useState("Loading...");
 
   useEffect(() => {
-    fetch("http://localhost:8080/")
+    fetch("https://form-server-6gpy.onrender.com/")
       .then((response) => response.json())
       .then((data) => setMessage(data.message));
   }, []);
